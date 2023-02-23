@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Survey Form</title>
+  </head>
+    <body>
+      <h1 id="title">Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+      <form id="survey-form"><label for="name" id="name-label">Name:<input type="text" id="name" name="name" placeholder="Your name here"  required></label>
+      <label for="email" id="email-label">Email: </label><input id="email" type="email" placeholder="Your email here" required></label>
+      <label for="number" id="number-label">Age: </label><input type="number" id="number" min="1" max="120" placeholder="Age" value"age"></label>
+      <label>Which option best describes your current role:<select name="join-quesion" id="dropdown" list="join-list">
+        <option value="current_role" >Select current role</option>
+        <option value="student" >Student</option>
+        <option value="full_time_job" >Full-time job</option>
+        <option value="full_time_learner" >Full time leaner</option>
+        <option value="not_to_say" >Prefer not to say</option>
+          <option value="other">Other</option>
+</select></label>
+<fieldset>
+<legend>Have you ever written any code?</legend>
+      <input type="radio" name="coder" value="male"> Yes<br>
+      <input type="radio" name="coder" value="female"> No<br>
+</fieldset>
+<fieldset>
+  <legend>Coding Languages you have used</legend>
+        <label> <input type="checkbox" name="code1" value="javascript" > Javascript </label>
+        <label> <input type="checkbox" name="code2" value="java" > Java </label>
+        <label> <input type="checkbox" name="code3" value="C++" > C++ </label>
+        <label> <input type="checkbox" name="code4" value="other" > Other </label>
+</fieldset>
+        <label>Any comments or suggestions?<textarea name="comments" id="comments" maxlength="500" ></textarea></label>
+        <button id="submit">Submit</button>
+      </form>
+    </body>
+  </html>
